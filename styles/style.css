@@ -237,7 +237,8 @@
     max-width: calc(50% - 30px);
     transition: 0.25s ease-in-out;
     cursor: pointer;
-    background-color: var(--color-dark-two)
+    background-color: var(--color-dark-two);
+    border-radius: 10px;
 }
 
 #entries .entry.in-view-viewed {
@@ -254,8 +255,9 @@
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    box-shadow: 0 0.25vw 1vw -0.2vw rgba(0, 0, 0, 0.075);
-    transition: 0.25s ease-in-out
+    box-shadow: 0 0.25vw 1vw -0.2vw rgba(0, 0, 0, 0.2);
+    transition: 0.25s ease-in-out;
+    border-radius: 10px
 }
 
 #entries .entry .image:before {
