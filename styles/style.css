@@ -9,21 +9,17 @@
 }
 
 .template h1 {
-    font-family: gotham-light, sans-serif;
     font-size: 38px;
     line-height: 1.4;
     letter-spacing: -1px
 }
-ч
+
 @media (max-width: 540px) {
     .template h1 {
         font-size: 28px
     }
 }
 
-.template p {
-    font-family: gotham-light, sans-serif
-}
 
 .template .links {
     float: left;
@@ -150,7 +146,6 @@
 }
 
 #header .title p {
-    font-family: gotham-light, sans-serif;
     font-size: 12px
 }
 
@@ -267,7 +262,7 @@
 }
 
 #entries .entry:hover .image {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 0.25vw 2vw -0.2vw rgba(0, 0, 0, 0.075)
 }
 
@@ -329,174 +324,12 @@
 }
 
 #entries .entry .meta .text p {
-    font-family: gotham-light, sans-serif;
     font-size: 12px;
     margin-top: 0;
     overflow: hidden;
     text-overflow: ellipsis
 }
 
-#entries-full {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: var(--color-dark-seventy-five);
-    overflow: scroll;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s ease-in-out
-}
-
-#entries-full.entries-full-active {
-    opacity: 1;
-    visibility: visible
-}
-
-#entries-full .controller {
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    z-index: 12;
-    cursor: pointer;
-    transition: 0.25s ease-in-out
-}
-
-#entries-full .controller svg {
-    width: 24px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    fill: var(--color-base-fifty);
-    transition: 0.25s ease-in-out
-}
-
-@media (max-width: 540px) {
-    #entries-full .controller svg {
-        fill: var(--color-dark)
-    }
-}
-
-#entries-full .controller.controller-close {
-    top: 0;
-    right: 0
-}
-
-#entries-full .controller.controller-next {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%)
-}
-
-#entries-full .controller.controller-previous {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%)
-}
-
-#entries-full .controller:hover svg {
-    fill: var(--color-base)
-}
-
-@media (max-width: 540px) {
-    #entries-full .controller:hover svg {
-        fill: var(--color-dark)
-    }
-}
-
-#entries-full .controller:hover.controller-next, #entries-full .controller:hover.controller-previous {
-    width: 75px
-}
-
-#entries-full .entry {
-    width: calc(100% - 180px);
-    max-width: 980px;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    z-index: 11;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 20px);
-    margin: 30px 0 120px;
-    background-color: var(--color-base);
-    border-radius: 10px;
-    box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.75s ease-in-out
-}
-
-@media (max-width: 540px) {
-    #entries-full .entry {
-        width: 100%;
-        min-height: 100%;
-        margin: 0;
-        border-radius: 0
-    }
-}
-
-#entries-full .entry.entry-active {
-    height: auto;
-    opacity: 1;
-    visibility: visible;
-    transform: translate(-50%, 0)
-}
-
-#entries-full .entry .header {
-    width: 100%;
-    float: left;
-    padding: 47px 60px 52px
-}
-
-#entries-full .entry .header p {
-    font-size: 16px
-}
-
-@media (max-width: 680px) {
-    #entries-full .entry .header p {
-        font-size: 14px
-    }
-}
-
-@media (max-width: 680px) {
-    #entries-full .entry .header {
-        padding: 47px 30px 52px
-    }
-}
-
-#entries-full .entry img {
-    width: 100%;
-    min-width: 100%;
-    float: left;
-    box-shadow: 0 0.25vw 1vw -0.2vw rgba(0, 0, 0, 0.075)
-}
-
-#entries-full .entry .text {
-    width: 100%;
-    float: left;
-    padding: 38px 60px 52px
-}
-
-#entries-full .entry .text p {
-    font-size: 16px;
-    margin-top: 12px
-}
-
-@media (max-width: 540px) {
-    #entries-full .entry .text p {
-        font-size: 14px
-    }
-}
-
-@media (max-width: 680px) {
-    #entries-full .entry .text {
-        padding: 38px 30px 52px
-    }
-}
 
 #footer {
     margin: 20px 0
@@ -594,20 +427,14 @@ canvas {
 
 
 .fadein {
-    -webkit-animation-name: fadein;
     animation-name: fadein;
-    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both
 }
 
 .fadein-delay {
-    -webkit-animation-name: fadein;
     animation-name: fadein;
-    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both
 }
 
