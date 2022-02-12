@@ -14,7 +14,7 @@
     line-height: 1.4;
     letter-spacing: -1px
 }
-
+ч
 @media (max-width: 540px) {
     .template h1 {
         font-size: 28px
@@ -241,7 +241,7 @@
     border-radius: 10px;
 }
 
-#entries .entry.in-view-viewed {
+#entries .entry .in-view-viewed {
     animation-duration: .75s;
     animation-fill-mode: both;
     animation-name: fadeinup;
