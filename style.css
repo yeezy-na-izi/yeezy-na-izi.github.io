@@ -182,12 +182,21 @@ ol, ul {
     margin-top: 10px
 }
 
+/*#header .content {*/
+/*    padding: 0 30% 0 0*/
+/*}*/
+
+/*#header .content h1 {*/
+/*    position: relative;*/
+/*    padding: 0 0 29px*/
+/*}*/
+
 
 #intro {
     margin-top: 91px;
     animation-duration: .75s;
     animation-fill-mode: both;
-    animation-name: fadeinup;
+    animation-name: fadein;
     animation-delay: 0.25s
 }
 
@@ -351,29 +360,29 @@ ol, ul {
 }
 
 .social-icon.spotify {
-    -webkit-mask: url(spotify.svg) no-repeat center;
-    mask: url(spotify.svg) no-repeat center
+    -webkit-mask: url(static/spotify.svg) no-repeat center;
+    mask: url(static/spotify.svg) no-repeat center
 }
 
 .social-icon.telegram {
-    -webkit-mask: url(telegram.svg) no-repeat center;
-    mask: url(telegram.svg) no-repeat center
+    -webkit-mask: url(static/telegram.svg) no-repeat center;
+    mask: url(static/telegram.svg) no-repeat center
 }
 
 .social-icon.github {
-    -webkit-mask: url(github.svg) no-repeat center;
-    mask: url(github.svg) no-repeat center
+    -webkit-mask: url(static/github.svg) no-repeat center;
+    mask: url(static/github.svg) no-repeat center
 }
 
 .social-icon.instagram {
-    -webkit-mask: url(instagram.svg) no-repeat center;
-    mask: url(instagram.svg) no-repeat center
+    -webkit-mask: url(static/instagram.svg) no-repeat center;
+    mask: url(static/instagram.svg) no-repeat center
 }
 
 
 .social-icon.vk {
-    -webkit-mask: url(vk.svg) no-repeat center;
-    mask: url(vk.svg) no-repeat center
+    -webkit-mask: url(static/vk.svg) no-repeat center;
+    mask: url(static/vk.svg) no-repeat center
 }
 
 .fadein {
@@ -501,3 +510,7 @@ ol, ul {
     }
 }
 
+.fullpage_section {
+    height: 100vh;
+    vertical-align: middle;
+}

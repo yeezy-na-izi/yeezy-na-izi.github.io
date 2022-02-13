@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
     <title>My portfolio</title>
 
 </head>
 <body class="palette-white">
 <div class="template fadein">
-    <section class="container" id="header">
+    <section class="container" id="header" data-anchor="top">
         <div class="inner">
-            <div class="avatar" style="background-image: url(styles/avatar.jpeg);"></div>
+            <div class="avatar" style="background-image: url(static/avatar.jpeg);"></div>
 
             <div class="title">
                 <h2 class="typing-demo">Хованский Максим</h2>
@@ -69,10 +69,16 @@
                     <span class="name">Spotify</span>
                 </a>
             </div>
+<!--            <div class="content">-->
+<!--                <h1>Hi, I’m Max, Russian Django/Telegram bots developer. I'm 17, live in Moscow and listen to-->
+<!--                    Jazz(joke)</h1>-->
+<!--                <p>I'm currently looking up for Frontend Developer because I've got not enough knowledge in this-->
+<!--                    direction.</p>-->
+<!--            </div>-->
         </div>
     </section>
 
-    <section class="container" id="intro">
+    <section class="container fullpage_section" id="intro">
         <div class="inner">
             <div class="content">
                 <h1>Hi, I’m Max, Russian Django/Telegram bots developer. I'm 17, live in Moscow and listen to
@@ -83,12 +89,12 @@
         </div>
     </section>
 
-    <section class="container" id="entries">
+    <section class="container fullpage_section" id="entries" data-anchor="middle">
         <div class="inner">
             <div class="content">
                 <article class="entry" data-entry-id="portfolio-item-1">
                     <div class="image"
-                         style="background-image: url(styles/first.png);">
+                         style="background-image: url(static/first.png);">
                     </div>
 
                     <div class="meta">
@@ -103,7 +109,7 @@
         </div>
     </section>
 
-    <section class="container" id="footer">
+    <section class="container" id="footer" data-anchor="bottom">
         <div class="inner">
             <div class="links">
                 <a class="link in-view-viewed" href="https://github.com/yeezy-na-izi"
@@ -160,5 +166,6 @@
         </div>
     </section>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
