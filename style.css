@@ -376,6 +376,12 @@ ol, ul {
     mask: url(static/vk.svg) no-repeat center
 }
 
+.social-icon.friend {
+    -webkit-mask: url(static/friend.svg) no-repeat center;
+    mask: url(static/friend.svg) no-repeat center;
+
+}
+
 .fadein {
     -webkit-animation-name: fadein;
     animation-name: fadein;
