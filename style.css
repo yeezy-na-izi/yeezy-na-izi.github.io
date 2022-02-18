@@ -2,8 +2,19 @@
     --color-base: #fff;
     --color-light: #f8f8f8;
     --color-mid: #333;
-    --color-dark: #000;
+    --color-text: #000;
     --color-dark-two: rgba(0, 0, 0, 0.02);
+    --color-header: var(--color-base);
+    background-color: var(--color-base)
+}
+
+.palette-dark {
+    --color-base: #000;
+    --color-light: #333;
+    --color-mid: #f8f8f8;
+    --color-text: #fff;
+    --color-header: #3f3f3f;
+    --color-dark-two: rgba(255, 255, 255, 0.1);
     background-color: var(--color-base)
 }
 
@@ -28,13 +39,13 @@ h1, h2, h3 {
     font-family: gotham-book, sans-serif;
     font-size: 24px;
     line-height: 1.6;
-    color: var(--color-dark)
+    color: var(--color-text)
 }
 
 p a {
     font-family: gotham-medium, sans-serif;
     position: relative;
-    color: var(--color-dark)
+    color: var(--color-text)
 }
 
 p a:after {
@@ -100,7 +111,7 @@ ol, ul {
 .template .links .link .image .social-icon {
     width: 14px;
     height: 14px;
-    background-color: var(--color-dark)
+    background-color: var(--color-text)
 }
 
 .template .links .link .name {
@@ -109,13 +120,13 @@ ol, ul {
     left: 50%;
     transform: translateX(-50%);
     transition: 0.25s ease-in-out;
-    color: var(--color-dark);
+    color: var(--color-text);
     opacity: 0;
     visibility: hidden
 }
 
 .template .links .link:hover .image {
-    border-color: var(--color-dark)
+    border-color: var(--color-text)
 }
 
 .template .links .link:hover .name {
@@ -146,7 +157,9 @@ ol, ul {
 
 
 #header {
-    margin-top: 103px
+    background-color: var(--color-header);
+    padding-top: 70px;
+    padding-bottom: 40px;
 }
 
 
@@ -159,7 +172,7 @@ ol, ul {
     background-position: center center;
     background-size: cover;
     border-radius: 50%;
-    background-color: var(--color-dark)
+    background-color: var(--color-text)
 }
 
 #header .title {
@@ -174,7 +187,8 @@ ol, ul {
 }
 
 #header .title p {
-    font-size: 12px
+    font-size: 12px;
+    color: var(--color-text);
 }
 
 #header .links {
@@ -209,12 +223,13 @@ ol, ul {
     position: absolute;
     bottom: -1px;
     left: 0;
-    background-color: var(--color-dark);
+    background-color: var(--color-text);
     content: ''
 }
 
 .intro .content p {
-    margin-top: 29px
+    margin-top: 29px;
+    color: var(--color-text);
 }
 
 #entries {
@@ -289,7 +304,7 @@ ol, ul {
 #entries .entry .meta .text h3 {
     font-family: gotham-book, sans-serif;
     font-size: 16px;
-    color: var(--color-dark);
+    color: var(--color-text);
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -298,9 +313,12 @@ ol, ul {
     font-size: 12px;
     margin-top: 0;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
 }
 
+.text p {
+    color: var(--color-text);
+}
 
 #footer {
     margin: 20px 0
@@ -319,7 +337,7 @@ ol, ul {
     position: absolute;
     bottom: -1px;
     left: 0;
-    background-color: var(--color-dark);
+    background-color: var(--color-text);
     content: ''
 }
 
@@ -340,7 +358,7 @@ ol, ul {
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: var(--color-dark);
+    background-color: var(--color-text);
     transform: translate(-50%, -50%)
 }
 
@@ -454,7 +472,8 @@ ol, ul {
 
 @media (max-width: 680px) {
     #header {
-        margin-top: 60px
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
 
     #header .title {
@@ -507,7 +526,6 @@ ol, ul {
         margin: 54px 0 124px
     }
 }
-
 
 
 .text {
