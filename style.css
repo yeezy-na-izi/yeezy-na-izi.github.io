@@ -1,3 +1,25 @@
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    box-shadow: 13px 9px 26px -7px rgba(0, 0, 0, 0.16), -2px -3px 26px -7px rgba(255, 255, 255, 1);
+    background: #E9DADB;
+    border: 0;
+    position: relative;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+    border: 0;
+    outline: none;
+
+}
+
+
 .palette-white {
     --color-base: #fff;
     --color-light: #f8f8f8;
