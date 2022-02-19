@@ -582,12 +582,12 @@ ol, ul {
     display: none;
 }
 
-.switch input:checked + div {
+.switch input:checked + span {
     background-color: #3498db;
     left: calc(100% - 25px);
 }
 
-.switch div {
+.switch span {
     position: absolute;
     width: 25px;
     height: 25px;
