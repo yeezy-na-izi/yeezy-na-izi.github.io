@@ -378,6 +378,11 @@ ol, ul {
     mask: url(static/telegram.svg) no-repeat center
 }
 
+.social-icon.twitter {
+    -webkit-mask: url(static/twitter.svg) no-repeat center;
+    mask: url(static/twitter.svg) no-repeat center
+}
+
 .social-icon.github {
     -webkit-mask: url(static/github.svg) no-repeat center;
     mask: url(static/github.svg) no-repeat center
