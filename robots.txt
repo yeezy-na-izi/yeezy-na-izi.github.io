@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yeezy-na-izi.github.io/sitemap.xml
