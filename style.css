@@ -234,12 +234,12 @@ ol, ul {
     color: var(--color-text);
 }
 
-#entries {
+.blog {
     margin-top: 111px
 }
 
 
-#entries .content {
+.blog .content {
     width: calc(100% + 15px);
     display: flex;
     flex: 0 1 auto;
@@ -248,7 +248,7 @@ ol, ul {
     transform: translateX(-15px)
 }
 
-#entries .entry {
+.blog .entry {
     margin: 0 15px 30px 15px;
     padding: 60px 60px 54px;
     flex-basis: calc(50% - 30px);
@@ -259,14 +259,14 @@ ol, ul {
     border-radius: 10px;
 }
 
-#entries .entry .in-view-viewed {
+.blog .entry .in-view-viewed {
     animation-duration: .75s;
     animation-fill-mode: both;
     animation-name: fadein;
     animation-delay: 0.25s
 }
 
-#entries .entry .image {
+.blog .entry .image {
     width: 100%;
     float: left;
     position: relative;
@@ -278,19 +278,19 @@ ol, ul {
     border-radius: 10px
 }
 
-#entries .entry .image:before {
+.blog .entry .image:before {
     padding-top: 75%;
     display: block;
     content: ''
 }
 
-#entries .entry:hover .image {
+.blog .entry:hover .image {
     transform: translateY(-10px);
     box-shadow: 0 0.25vw 2vw -0.2vw rgba(0, 0, 0, 0.075)
 }
 
 
-#entries .entry .meta {
+.blog .entry .meta {
     width: 100%;
     float: left;
     padding: 30px 60px 0 0;
@@ -298,12 +298,12 @@ ol, ul {
 }
 
 
-#entries .entry .meta .text {
+.blog .entry .meta .text {
     width: 100%;
     float: left
 }
 
-#entries .entry .meta .text h3 {
+.blog .entry .meta .text h3 {
     font-family: gotham-book, sans-serif;
     font-size: 16px;
     color: var(--color-text);
@@ -311,7 +311,7 @@ ol, ul {
     text-overflow: ellipsis
 }
 
-#entries .entry .meta .text p {
+.blog .entry .meta .text p {
     font-size: 12px;
     margin-top: 0;
     overflow: hidden;
@@ -535,7 +535,7 @@ ol, ul {
 
 
 @media (max-width: 1180px) {
-    #entries .entry {
+    .blog .entry {
         flex-basis: calc(50% - 30px);
         max-width: calc(50% - 30px)
     }
@@ -547,11 +547,11 @@ ol, ul {
 }
 
 @media (max-width: 1080px) {
-    #entries .entry {
+    .blog .entry {
         padding: 30px 30px 24px
     }
 
-    #entries .entry .meta {
+    .blog .entry .meta {
         padding: 20px 30px 0 0
     }
 
@@ -569,7 +569,7 @@ ol, ul {
         width: calc(100% - 60px)
     }
 
-    #entries .entry {
+    .blog .entry {
         flex-basis: calc(100% - 30px);
         max-width: calc(100% - 30px);
     }
@@ -606,7 +606,7 @@ ol, ul {
         padding: 0
     }
 
-    #entries {
+    .blog {
         margin-top: 81px
     }
 
@@ -628,7 +628,7 @@ ol, ul {
         font-size: 28px
     }
 
-    #entries .entry {
+    .blog .entry {
         padding: 15px;
     }
 
@@ -636,7 +636,7 @@ ol, ul {
         padding: 15px;
     }
 
-    #entries .entry:not(:first-of-type) {
+    .blog .entry:not(:first-of-type) {
         margin-top: 30px;
     }
 
