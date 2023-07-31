@@ -294,7 +294,6 @@ ol, ul {
     width: 100%;
     float: left;
     padding: 30px 60px 0 0;
-    white-space: nowrap
 }
 
 
@@ -307,15 +306,13 @@ ol, ul {
     font-family: gotham-book, sans-serif;
     font-size: 16px;
     color: var(--color-text);
-    overflow: hidden;
-    text-overflow: ellipsis
+    overflow: auto;
 }
 
 .blog .entry .meta .text p {
     font-size: 12px;
     margin-top: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: auto;
 }
 
 #my-life {
@@ -374,8 +371,7 @@ ol, ul {
     font-family: gotham-book, sans-serif;
     font-size: 16px;
     color: var(--color-text);
-    overflow: hidden;
-    text-overflow: ellipsis
+    overflow: auto;
 }
 
 #my-life .entry:hover .image {
@@ -388,7 +384,6 @@ ol, ul {
     width: 100%;
     float: left;
     padding: 30px 60px 0 0;
-    white-space: nowrap
 }
 
 
@@ -400,8 +395,7 @@ ol, ul {
 #my-life .entry .meta .text p {
     font-size: 12px;
     margin-top: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: auto;
 }
 
 .text p {
@@ -652,32 +646,6 @@ ol, ul {
 
 .text {
     margin-bottom: 12px;
-}
-
-.learn_more {
-    position: relative;
-    background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
-    background-size: 500%;
-    border: none;
-    border-radius: 5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    color: #fff;
-    cursor: pointer;
-    font-size: 0.8em;
-    height: 3rem;
-    letter-spacing: 0.05em;
-    outline: none;
-    user-select: none;
-    width: 8rem;
-    display: block;
-}
-
-.learn_more:hover {
-    animation-name: gradient;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
 }
 
 @keyframes gradient {
