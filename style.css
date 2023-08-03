@@ -158,14 +158,14 @@ ol, ul {
 }
 
 
-#header {
+header {
     background-color: var(--color-header);
     padding-top: 70px;
     padding-bottom: 40px;
 }
 
 
-#header .avatar {
+header .avatar {
     width: 100px;
     height: 100px;
     float: left;
@@ -177,23 +177,23 @@ ol, ul {
     background-color: var(--color-text)
 }
 
-#header .title {
+header .title {
     float: left;
     margin-top: 9px
 }
 
 
-#header .title h2 {
+header .title h2 {
     font-family: gotham-book, sans-serif;
     font-size: 16px
 }
 
-#header .title p {
+header .title p {
     font-size: 12px;
     color: var(--color-text);
 }
 
-#header .links {
+header .inner .links {
     float: right;
     margin-top: 10px
 }
@@ -238,8 +238,7 @@ ol, ul {
     margin-top: 111px
 }
 
-
-.blog .content {
+.content {
     width: calc(100% + 15px);
     display: flex;
     flex: 0 1 auto;
@@ -248,7 +247,7 @@ ol, ul {
     transform: translateX(-15px)
 }
 
-.blog .entry {
+.entry {
     margin: 0 15px 30px 15px;
     padding: 60px 60px 54px;
     flex-basis: calc(50% - 30px);
@@ -259,95 +258,14 @@ ol, ul {
     border-radius: 10px;
 }
 
-.blog .entry .in-view-viewed {
+.entry .in-view-viewed {
     animation-duration: .75s;
     animation-fill-mode: both;
     animation-name: fadein;
     animation-delay: 0.25s
 }
 
-.blog .entry .image {
-    width: 100%;
-    float: left;
-    position: relative;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0.25vw 1vw -0.2vw rgba(0, 0, 0, 0.2);
-    transition: 0.25s ease-in-out;
-    border-radius: 10px
-}
-
-.blog .entry .image:before {
-    padding-top: 75%;
-    display: block;
-    content: ''
-}
-
-.blog .entry:hover .image {
-    transform: translateY(-10px);
-    box-shadow: 0 0.25vw 2vw -0.2vw rgba(0, 0, 0, 0.075)
-}
-
-
-.blog .entry .meta {
-    width: 100%;
-    float: left;
-    padding: 30px 60px 0 0;
-}
-
-
-.blog .entry .meta .text {
-    width: 100%;
-    float: left
-}
-
-.blog .entry .meta .text h3 {
-    font-family: gotham-book, sans-serif;
-    font-size: 16px;
-    color: var(--color-text);
-    overflow: auto;
-}
-
-.blog .entry .meta .text p {
-    font-size: 12px;
-    margin-top: 0;
-    overflow: auto;
-}
-
-#my-life {
-    margin-top: 111px
-}
-
-
-#my-life .content {
-    width: calc(100% + 15px);
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    transform: translateX(-15px)
-}
-
-#my-life .entry {
-    margin: 0 15px 30px 15px;
-    padding: 60px 60px 54px;
-    flex-basis: calc(50% - 30px);
-    max-width: calc(50% - 30px);
-    transition: 0.25s ease-in-out;
-    cursor: pointer;
-    background-color: var(--color-dark-two);
-    border-radius: 10px;
-}
-
-#my-life .entry .in-view-viewed {
-    animation-duration: .75s;
-    animation-fill-mode: both;
-    animation-name: fadein;
-    animation-delay: 0.25s
-}
-
-#my-life .entry .image {
+.entry .image {
     width: 100%;
     float: left;
     position: relative;
@@ -360,39 +278,38 @@ ol, ul {
 }
 
 
-
-#my-life .entry .image:before {
+.entry .image:before {
     padding-top: 75%;
     display: block;
     content: ''
 }
 
-#my-life .entry .meta .text h3 {
+.entry .meta .text h3 {
     font-family: gotham-book, sans-serif;
     font-size: 16px;
     color: var(--color-text);
     overflow: auto;
 }
 
-#my-life .entry:hover .image {
+.entry:hover .image {
     transform: translateY(-10px);
     box-shadow: 0 0.25vw 2vw -0.2vw rgba(0, 0, 0, 0.075)
 }
 
 
-#my-life .entry .meta {
+.entry .meta {
     width: 100%;
     float: left;
     padding: 30px 60px 0 0;
 }
 
 
-#my-life .entry .meta .text {
+.entry .meta .text {
     width: 100%;
     float: left
 }
 
-#my-life .entry .meta .text p {
+.entry .meta .text p {
     font-size: 12px;
     margin-top: 0;
     overflow: auto;
@@ -402,17 +319,17 @@ ol, ul {
     color: var(--color-text);
 }
 
-#footer {
+footer {
     margin: 20px 0
 }
 
 
-#footer .links {
+footer .inner .links {
     width: 100%;
     padding-bottom: 30px
 }
 
-#footer .links:after {
+footer .inner .links:after {
     width: 100%;
     max-width: 240px;
     height: 2px;
@@ -423,14 +340,14 @@ ol, ul {
     content: ''
 }
 
-#footer .text {
+footer .inner .text {
     width: 100%;
     max-width: 480px;
     float: left;
     margin-top: 21px
 }
 
-#footer .text p {
+footer .inner .text p {
     font-size: 14px
 }
 
@@ -529,33 +446,21 @@ ol, ul {
 
 
 @media (max-width: 1180px) {
-    .blog .entry {
-        flex-basis: calc(50% - 30px);
-        max-width: calc(50% - 30px)
-    }
-
-    #my-life .entry {
+    .entry {
         flex-basis: calc(50% - 30px);
         max-width: calc(50% - 30px)
     }
 }
 
 @media (max-width: 1080px) {
-    .blog .entry {
+    .entry {
         padding: 30px 30px 24px
     }
 
-    .blog .entry .meta {
+    .entry .meta {
         padding: 20px 30px 0 0
     }
 
-    #my-life .entry {
-        padding: 30px 30px 24px
-    }
-
-    #my-life .entry .meta {
-        padding: 20px 30px 0 0
-    }
 }
 
 @media (max-width: 780px) {
@@ -563,30 +468,26 @@ ol, ul {
         width: calc(100% - 60px)
     }
 
-    .blog .entry {
+    .entry {
         flex-basis: calc(100% - 30px);
         max-width: calc(100% - 30px);
     }
 
-    #my-life .entry {
-        flex-basis: calc(100% - 30px);
-        max-width: calc(100% - 30px);
-    }
 }
 
 
 @media (max-width: 680px) {
-    #header {
+    header {
         padding-top: 50px;
         padding-bottom: 30px;
     }
 
-    #header .title {
+    header .title {
         width: 100%;
         margin-top: 21px
     }
 
-    #header .links {
+    header .inner .links {
         width: 100%;
         float: left;
         margin-top: 24px
@@ -604,11 +505,7 @@ ol, ul {
         margin-top: 81px
     }
 
-    #my-life {
-        margin-top: 81px
-    }
-
-    #footer {
+    footer {
         margin: 60px 0 124px
     }
 }
@@ -622,23 +519,15 @@ ol, ul {
         font-size: 28px
     }
 
-    .blog .entry {
+    .entry {
         padding: 15px;
     }
 
-    #my-life .entry {
-        padding: 15px;
-    }
-
-    .blog .entry:not(:first-of-type) {
+    .entry:not(:first-of-type) {
         margin-top: 30px;
     }
 
-    #my-life .entry:not(:first-of-type) {
-        margin-top: 30px;
-    }
-
-    #footer {
+    footer {
         margin: 54px 0 124px
     }
 }
@@ -648,14 +537,6 @@ ol, ul {
     margin-bottom: 12px;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0 50%;
-    }
-    100% {
-        background-position: 100%;
-    }
-}
 
 .switch {
     position: relative;
